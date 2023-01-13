@@ -1,8 +1,12 @@
-import React from 'react';
 
-const Results = () => {
+
+const Results = ({ results }) => {
     return (
-        <div>Results</div>
+        <div>
+            {requests.map(result => (
+                <Thumbnail />
+            ))}
+        </div>
     );
 };
 

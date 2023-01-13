@@ -4,7 +4,7 @@ import Nav from '../components/Nav';
 import Results from '../components/Results';
 import requests from "../utilis/requests";
 
-export default function Home() {
+export default function Home({ results }) {
   return (
     <div>
       <Head>
@@ -19,7 +19,7 @@ export default function Home() {
       <Nav />
 
       {/* RESULTS */}
-      <Results />
+      <Results results={results} />
     </div>
   );
 }
