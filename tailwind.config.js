@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+const tailwindConfig = {
   mode: "jit",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -14,3 +14,5 @@ module.exports = {
   },
   plugins: [require('tailwind-scrollbar-hide')],
 };
+
+module.exports = tailwindConfig;
