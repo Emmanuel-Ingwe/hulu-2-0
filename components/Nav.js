@@ -1,8 +1,7 @@
-import requests from "../utilis/requests";
 import { useRouter } from "next/router";
+import requests from "../utilis/requests";
 
-
-const Nav = () => {
+function Nav() {
     const router = useRouter();
 
     return (
@@ -21,6 +20,6 @@ const Nav = () => {
             <div className="absolute top-0 right-0 bg-gradient-to-l from-[#06202A] h-10 w-1/12" />
         </nav>
     );
-};
+}
 
 export default Nav;

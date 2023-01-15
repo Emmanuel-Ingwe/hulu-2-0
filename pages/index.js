@@ -3,8 +3,8 @@ import Header from "../components/Header";
 import Nav from '../components/Nav';
 import Results from '../components/Results';
 import requests from "../utilis/requests";
-import Image from "next/image";
-import tmdb from "../public/tmdb.svg";
+// import Image from "next/image";
+// import tmdb from "../public/tmdb.svg";
 
 export default function Home({ results }) {
   return (
@@ -22,7 +22,7 @@ export default function Home({ results }) {
 
       {/* RESULTS */}
       <Results results={results} />
-      <div className="flex justify-center">
+      {/* <div className="flex justify-center">
         <Image
           className="object-contain"
           height={100}
@@ -30,7 +30,7 @@ export default function Home({ results }) {
           src={tmdb}
           alt="tmdb"
         />
-      </div>
+      </div> */}
     </div>
   );
 }
