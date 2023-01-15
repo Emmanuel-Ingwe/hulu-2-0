@@ -19,7 +19,7 @@ export default function Home({ results }) {
       <Results results={results} />
       <div className="flex justify-center">
         <Image
-          className="object-contain"
+          className="object-contain mb-5"
           height={100}
           width={100}
           src={tmdb}
